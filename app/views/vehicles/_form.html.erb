@@ -1,0 +1,57 @@
+<%= form_with(model: vehicle) do |form| %>
+  <% if vehicle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(vehicle.errors.count, "error") %> prohibited this vehicle from being saved:</h2>
+
+      <ul>
+        <% vehicle.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :drag_c %>
+    <%= form.text_field :drag_c %>
+  </div>
+
+  <div class="field">
+    <%= form.label :drag_area %>
+    <%= form.text_field :drag_area %>
+  </div>
+
+  <div class="field">
+    <%= form.label :friction_c_ground %>
+    <%= form.text_field :friction_c_ground %>
+  </div>
+
+  <div class="field">
+    <%= form.label :friction_c_trans %>
+    <%= form.text_field :friction_c_trans %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mass %>
+    <%= form.text_field :mass %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wheel_diameter %>
+    <%= form.text_field :wheel_diameter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gear_ratio %>
+    <%= form.text_field :gear_ratio %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

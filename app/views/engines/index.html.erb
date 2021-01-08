@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Engines</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mass</th>
+      <th>Max torque</th>
+      <th>Max hp</th>
+      <th>Max rpm</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @engines.each do |engine| %>
+      <tr>
+        <td><%= engine.mass %></td>
+        <td><%= engine.max_torque %></td>
+        <td><%= engine.max_hp %></td>
+        <td><%= engine.max_rpm %></td>
+        <td><%= link_to 'Show', engine %></td>
+        <td><%= link_to 'Edit', edit_engine_path(engine) %></td>
+        <td><%= link_to 'Destroy', engine, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Engine', new_engine_path %>

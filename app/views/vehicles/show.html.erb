@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @vehicle.name %>
+</p>
+
+<p>
+  <strong>Drag c:</strong>
+  <%= @vehicle.drag_c %>
+</p>
+
+<p>
+  <strong>Drag area:</strong>
+  <%= @vehicle.drag_area %>
+</p>
+
+<p>
+  <strong>Friction c ground:</strong>
+  <%= @vehicle.friction_c_ground %>
+</p>
+
+<p>
+  <strong>Friction c trans:</strong>
+  <%= @vehicle.friction_c_trans %>
+</p>
+
+<p>
+  <strong>Mass:</strong>
+  <%= @vehicle.mass %>
+</p>
+
+<p>
+  <strong>Wheel diameter:</strong>
+  <%= @vehicle.wheel_diameter %>
+</p>
+
+<p>
+  <strong>Gear ratio:</strong>
+  <%= @vehicle.gear_ratio %>
+</p>
+
+<%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
+<%= link_to 'Back', vehicles_path %>

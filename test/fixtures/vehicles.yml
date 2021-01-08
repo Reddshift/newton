@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  drag_c: 1.5
+  drag_area: 1.5
+  friction_c_ground: 1.5
+  friction_c_trans: 1.5
+  mass: 1.5
+  wheel_diameter: 1.5
+  gear_ratio: 1.5
+
+two:
+  name: MyString
+  drag_c: 1.5
+  drag_area: 1.5
+  friction_c_ground: 1.5
+  friction_c_trans: 1.5
+  mass: 1.5
+  wheel_diameter: 1.5
+  gear_ratio: 1.5

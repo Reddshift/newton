@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Mass:</strong>
+  <%= @engine.mass %>
+</p>
+
+<p>
+  <strong>Max torque:</strong>
+  <%= @engine.max_torque %>
+</p>
+
+<p>
+  <strong>Max hp:</strong>
+  <%= @engine.max_hp %>
+</p>
+
+<p>
+  <strong>Max rpm:</strong>
+  <%= @engine.max_rpm %>
+</p>
+
+<%= link_to 'Edit', edit_engine_path(@engine) %> |
+<%= link_to 'Back', engines_path %>
